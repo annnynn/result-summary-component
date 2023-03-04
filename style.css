@@ -13,22 +13,24 @@
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     font-family: 'Hanken Grotesk', sans-serif;
-    height: 100vh;
     background: hsla(220, 100%, 96%, 1);
-    min-width: 375px;
+    height: 100vh;
 }
 
 .top-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background: var(--blue-bg);background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
-    height: 512px;
+    background: var(--blue-bg);
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+    padding: 24px 140px 40px 141px;
+    height: 512px;
+    max-width: 375px;
 }
 
 .result {
@@ -36,7 +38,6 @@ body {
     line-height: 23.45px;
     font-weight: 700;
     text-transform: capitalize;
-    padding-top: 24px;
     color: white;
 }
 
@@ -48,6 +49,7 @@ body {
     background: var(--circle-bg);
     border-radius: 50%;
     margin-top: 24px;
+    padding: 25px 39px 22px 38px;
 }
 
 .circle h1 {
@@ -55,11 +57,9 @@ body {
     line-height: 72px;
     font-weight: 800;
     color: white;
-    padding: 25px 39px 0px 38px;
 }
 
 .circle span {
-    padding-bottom: 22px;
     color: #CAC9FF;
     font-size: 16px;
     font-weight: 700;
@@ -82,7 +82,7 @@ body {
     color: #CAC9FF;
     width: 260px;
     text-align: center;
-    padding-bottom: 40px;
+
 }
 
 .boxes h2 {
@@ -92,6 +92,7 @@ body {
 
 .boxes {
     padding: 24px 30px 30px 30px;
+    cursor: pointer;
 }
 
 .box {
@@ -157,43 +158,33 @@ button {
 
 button:hover {
     background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
-    }
+}
 
-.right-side p{
+.right-side p {
     color: #303B59;
     font-weight: bold;
     font-size: 16px;
 }
 
-.right-side span{
+.right-side span {
     color: #303B59;
     opacity: 0.5;
 }
 
-@media(min-width: 1400px) {
+@media(min-width: 1440px) {
     body {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
-    }
-
-    .result {
-        padding-top: 38px;
     }
 
     .circle {
         margin-top: 35px;
-        width: 200px;
-
+        padding: 55px 60px 46px 59px;
     }
 
     .circle h1 {
-        padding: 55px 60px 0px 59px;
-    }
-
-    .circle span {
-        padding-bottom: 46px;
+        font-size: 72px;
     }
 
     .top-section {
@@ -213,6 +204,7 @@ button:hover {
         width: 260px;
         margin-top: 14px;
         font-size: 18px;
+        padding-bottom: 0;
     }
 
     .boxes {
@@ -235,13 +227,17 @@ button:hover {
     .boxes h2 {
         font-size: 24px;
     }
-    
-    .right-side p{
+
+    .right-side p {
         font-size: 18px;
     }
 
     button {
+        cursor: pointer;
         margin-top: 40px;
     }
 
+    button:hover {
+        background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    }
 }
