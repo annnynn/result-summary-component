@@ -18,6 +18,7 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
     background: hsla(220, 100%, 96%, 1);
     height: 100vh;
+    overflow: hidden;
 }
 
 .top-section {
@@ -31,6 +32,7 @@ body {
     padding: 24px 140px 40px 141px;
     height: 512px;
     max-width: 375px;
+    z-index: 1;
 }
 
 .result {
@@ -207,13 +209,13 @@ button:hover {
         padding-bottom: 0;
     }
 
+
     .boxes {
         background-color: hsla(0, 0%, 100%, 1);
         border-radius: 32px;
         padding: 38px 40px 46px 65px;
         height: 512px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
+    
     }
 
     .background {
@@ -221,9 +223,20 @@ button:hover {
         background-color: hsla(0, 0%, 100%, 1);
         margin-left: -25px;
         height: 512px;
-        z-index: -1;
+      border-radius: 32px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
     }
 
+       button {
+        cursor: pointer;
+        margin-top: 40px;
+       
+    }
+
+    button:hover {
+        background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    }
     .boxes h2 {
         font-size: 24px;
     }
@@ -232,12 +245,4 @@ button:hover {
         font-size: 18px;
     }
 
-    button {
-        cursor: pointer;
-        margin-top: 40px;
-    }
-
-    button:hover {
-        background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
-    }
 }
