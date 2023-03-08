@@ -17,6 +17,7 @@ body {
     justify-content: center;
     font-family: 'Hanken Grotesk', sans-serif;
     background: hsla(220, 100%, 96%, 1);
+    overflow: hidden;
     
 }
 
@@ -29,7 +30,6 @@ body {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     padding: 24px 140px 40px 141px;
-    height: 512px;
     max-width: 375px;
     z-index: 1;
 }
